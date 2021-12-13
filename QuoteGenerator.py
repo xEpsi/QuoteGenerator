@@ -1,29 +1,10 @@
 from time import sleep
-from base64 import b64decode as api_decode
-try:
-    import pyautogui
-    from selenium import webdriver
-    from selenium.webdriver.common.keys import Keys
-    from selenium.webdriver.support.ui import WebDriverWait
-    from selenium.webdriver.common.by import By
-    from colorama import Style, Fore
-    pyautogui.move(1,1)
-except:#Installs required modules if the they're not already installed
-    import os
-    print("Whoops, looks like you don't have the required Python modules. Let's fix that.")
-    sleep(1)
-    os.system('cmd /c "pip install pyautogui"')
-    os.system('cmd /c "pip install selenium"')
-    os.system('cmd /c "pip install colorama"')
-    print("\nPython modules installed!\n")
-    import pyautogui
-    from selenium import webdriver
-    from selenium.webdriver.common.keys import Keys
-    from selenium.webdriver.support.ui import WebDriverWait
-    from selenium.webdriver.common.by import By
-    from colorama import Style, Fore
-    print("Successfully imported the required modules. Now starting the program.")
-    sleep(1)
+import pyautogui
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from colorama import Style, Fore
 
 amount = int(input(f"{Fore.CYAN}How many quotes do you want to generate? (Please enter a number): "))
 print(Style.RESET_ALL)
