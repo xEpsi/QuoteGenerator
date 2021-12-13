@@ -39,7 +39,7 @@ sleep(0.4)
 for i in range(amount):
     driver.find_element(By.CLASS_NAME, "btn-text").click()
     sleep(3)
-    with open(f'Quote {i+1}.png', 'wb') as f:
+    with open(f'Quote {i+1}.png', 'wb+') as f:
         f.truncate(0)
         f.write(driver.find_element(By.CLASS_NAME, 'generated-image').screenshot_as_png)
     sleep(0.5)
