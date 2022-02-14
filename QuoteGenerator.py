@@ -69,7 +69,7 @@ except:
 
 amount = int(input(f"{Fore.CYAN}How many quotes do you want to generate? (Please enter a number under 50): "))
 
-if amount>50:
+if amount>=50:
     amount=49
 
 print(f"{Fore.YELLOW}Please do not touch your mouse or keyboard while the program is running.{Style.RESET_ALL}")
