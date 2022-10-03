@@ -1,4 +1,4 @@
-# If you want to save any quotes, move them into another folder before generating new ones.
+# If you want to save any quotes, move them into another folder before generating new ones
 
 import requests
 from os import path, mkdir
